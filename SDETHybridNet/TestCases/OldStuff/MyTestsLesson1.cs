@@ -5,7 +5,7 @@ using OpenQA.Selenium.Chrome;
 using System;
 using System.Threading;
 
-namespace TestCasesNUnit.OldStuff
+namespace TestCases.OldStuff
 {
     public class MyTestsLesson1
     {

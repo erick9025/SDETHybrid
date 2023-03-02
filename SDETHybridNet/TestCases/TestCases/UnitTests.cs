@@ -1,11 +1,9 @@
 ﻿using CoreFramework.Logger;
 using CoreFramework.Utilities;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace TestCasesNUnit.TestCases
+
+namespace TestCases.TestCases
 {
     internal class UnitTests
     {

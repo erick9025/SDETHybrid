@@ -2,7 +2,7 @@
 using NUnit.Framework;
 using TestCases.TestCases.ParentClasses;
 
-namespace TestCasesNUnit
+namespace TestCases.TestCases
 {
     public class FacebookTests : NagarroTest
     {

@@ -1,8 +1,7 @@
-﻿using CoreFramework.AllFeatures;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using TestCases.TestCases.ParentClasses;
 
-namespace TestCasesNUnit
+namespace TestCases.TestCases
 {
     public class GoogleTests : NagarroTest
     {
