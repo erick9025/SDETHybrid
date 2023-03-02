@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/SDETHybridNet/TestCases/bin/Debug/netcoreapp3.1
+/SDETHybridNet/TestCases/obj
+/SDETHybridNet/.vs/SDETHybridNet
+/SDETHybridNet/SDETHybridNet/obj
+/SDETHybridNet/SDETHybridNet/bin/Debug/netcoreapp3.1
