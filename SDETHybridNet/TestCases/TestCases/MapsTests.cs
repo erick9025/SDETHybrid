@@ -5,7 +5,7 @@ namespace TestCases.TestCases
 {
     public class MapsTests : ApiTest
     {
-        [Test, Category("Api_Maps"), Order (1)]
+        [Test, Category("API"), Order (1)]
         public void API_CompleteFlow_3Requests()
         {
             Services.Maps
@@ -14,7 +14,7 @@ namespace TestCases.TestCases
                 .GetPlaceDetails();
         }
 
-        [Test, Category("Api_Maps"), Order(2)]
+        [Test, Category("API"), Order(2)]
         public void API_MultipleGets()
         {
             Services.Maps
