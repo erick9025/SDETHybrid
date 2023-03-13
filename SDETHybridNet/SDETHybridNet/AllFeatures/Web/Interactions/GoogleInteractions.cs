@@ -1,4 +1,5 @@
-﻿using CoreFramework.AllFeatures.Web.ParentClasses;
+﻿using CoreFramework.AllFeatures.Parent;
+using CoreFramework.AllFeatures.Web.ParentClasses;
 using CoreFramework.Driver;
 using System;
 using System.Collections.Generic;

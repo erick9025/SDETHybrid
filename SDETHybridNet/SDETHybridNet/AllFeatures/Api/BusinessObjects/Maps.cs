@@ -7,17 +7,14 @@ namespace CoreFramework.API.BusinessObjects
 {
     public class Maps : BusinessObject
     {
-        private readonly MapsAbilities abilities;
-
-        public Maps(Browser browser) : base(browser)
+        public Maps()
         {
-            abilities = new MapsAbilities();
         }
 
         public Maps PostAddPlace()
         {
             MapsApiInteractions
-                .PostAddPlace(abilities.EndpointPostAddPlace, Method.POST, 200);
+                .PostAddPlace(MapsAbilities.EndpointPostAddPlace, Method.POST, 200);
 
             return this;
         }
@@ -25,7 +22,7 @@ namespace CoreFramework.API.BusinessObjects
         public Maps PutUpdatePlace()
         {
             MapsApiInteractions
-                .PutUpdatePlace(abilities.EndpointPutUpdatePlace, Method.PUT, 200);
+                .PutUpdatePlace(MapsAbilities.EndpointPutUpdatePlace, Method.PUT, 200);
 
             return this;
         }
@@ -33,7 +30,7 @@ namespace CoreFramework.API.BusinessObjects
         public Maps GetPlaceDetails()
         {
             MapsApiInteractions
-                .GetPlaceDetails(abilities.EndpointGetPlaceDetails, Method.GET, 200);
+                .GetPlaceDetails(MapsAbilities.EndpointGetPlaceDetails, Method.GET, 200);
 
             return this;
         }
@@ -41,7 +38,7 @@ namespace CoreFramework.API.BusinessObjects
         public Maps GetMultiplePlacesDetails()
         {
             MapsApiInteractions
-                .GetMultiplePlacesDetails(abilities.EndpointGetPlaceDetails, Method.GET, 404);
+                .GetMultiplePlacesDetails(MapsAbilities.EndpointGetPlaceDetails, Method.GET, 404);
 
             return this;
         }

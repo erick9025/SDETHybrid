@@ -3,7 +3,7 @@ using TestCases.TestCases.ParentClasses;
 
 namespace TestCases.TestCases
 {
-    public class AmazonTests : NagarroTest
+    public class AmazonTests : WebTest
     {
         [Test, Category("Amazon"), Order (2)]
         public void SearchItem()

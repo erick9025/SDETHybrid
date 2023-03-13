@@ -58,7 +58,7 @@ namespace CoreFramework.AllFeatures.Web.ParentClasses
         {
             get
             {
-                return _maps ?? (_maps = new Maps(Browser));
+                return _maps ?? (_maps = new Maps());
             }
         }
 
