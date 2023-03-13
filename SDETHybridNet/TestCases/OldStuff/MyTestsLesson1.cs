@@ -11,11 +11,6 @@ namespace TestCases.OldStuff
     {
         int waitFactor = 1;
 
-        [SetUp]
-        public void Setup()
-        {
-        }
-
         [Test, Category("Basic")]
         public void HolaMundo ()
         {
@@ -29,7 +24,7 @@ namespace TestCases.OldStuff
            Log.Info("Hello World");
         }
 
-        [Test, Category("OldGoogle")]
+        [Test, Category("Basic")]
         public void GoogleSearch()
         {
             WebDriver driver = null; //declare object equal to null

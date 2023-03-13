@@ -4,7 +4,7 @@ using TestCases.TestCases.ParentClasses;
 
 namespace TestCases.TestCases
 {
-    public class FacebookTests : NagarroTest
+    public class FacebookTests : WebTest
     {
         [Test, Category("Facebook"), Order(1)]
         public void CreateAccount_Man()

@@ -4,12 +4,17 @@ using CoreFramework.AllFeatures.Web.Interactions;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using CoreFramework.API.Abilities;
 
 namespace CoreFramework.AllFeatures.Web.ParentClasses
 {
     public abstract class BusinessObject
     {
         protected Browser Browser { get; set; }
+
+        public BusinessObject()
+        {
+        }
 
         public BusinessObject (Browser browser)
         {
@@ -63,5 +68,19 @@ namespace CoreFramework.AllFeatures.Web.ParentClasses
         }
 
         #endregion Interactions Api
+
+        #region Abilities
+
+        private MapsAbilities _mapsAbilities;
+
+        protected MapsAbilities MapsAbilities
+        {
+            get
+            {
+                return _mapsAbilities ?? (_mapsAbilities = new MapsAbilities());
+            }
+        }
+
+        #endregion Abilities
     }
 }

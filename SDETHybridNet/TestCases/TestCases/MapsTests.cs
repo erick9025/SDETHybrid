@@ -3,21 +3,21 @@ using TestCases.TestCases.ParentClasses;
 
 namespace TestCases.TestCases
 {
-    public class MapsTests : NagarroTest
+    public class MapsTests : ApiTest
     {
-        [Test, Category("Api_Maps"), Order (1)]
+        [Test, Category("API"), Order (1)]
         public void API_CompleteFlow_3Requests()
         {
-            Features.Maps
+            Services.Maps
                 .PostAddPlace()
                 .PutUpdatePlace()
                 .GetPlaceDetails();
         }
 
-        [Test, Category("Api_Maps"), Order(2)]
+        [Test, Category("API"), Order(2)]
         public void API_MultipleGets()
         {
-            Features.Maps
+            Services.Maps
                 .GetMultiplePlacesDetails();
         }
     }

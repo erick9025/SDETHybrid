@@ -4,20 +4,16 @@ namespace TestCasesNUnit.TestCases.ParentClasses
 {
     public abstract class BaseTest
     {
-        protected Browser Browser { get; set; }
+        protected abstract void InitializeFramework();
 
-        public void InitializeFramework()
+        protected void InitializeLog()
         {
-            Browser = new Browser();
-
-            Browser.InitializeBrowser(BrowserTarget.Chrome);
-            Browser.Wait(1);
+            //ToDo
         }
 
-        public void CloseBrowser()
+        protected void CloseLog()
         {
-            Browser.Wait(2);
-            Browser.QuitBrowser();
+            //ToDo
         }
     }
 }
